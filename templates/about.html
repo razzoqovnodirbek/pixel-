@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Biz haqimizda | PIXEL{% endblock title %}
+
+{% block content %}
+<div class="arsen">
+    <section class="about-hero">
+        <div class="container">
+            <h1>Biz haqimizda</h1>
+            <p>Pixel orqali loyiha va yechimlaringizni rivojlantiring va amaliy natijaga erishing.</p>
+        </div>
+    </section>
+
+    <section id="mission" class="section">
+        <div class="container">
+            <h2>Bizning missiya</h2>
+            <p>Bizning maqsadimiz – loyiha va yechimlaringizni tez, oson va sifatli amalga oshirish.</p>
+            <ul>
+                <li>Sifatli natija</li>
+                <li>Tez va samarali ish</li>
+                <li>Hamkorlik va moslashuvchanlik</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="values" class="section">
+        <div class="container">
+            <h2>Bizning qadriyatlar</h2>
+            <ul>
+                <li>Samimiylik</li>
+                <li>Professionalizm</li>
+                <li>Hamkorlik</li>
+                <li>Moslashuvchanlik</li>
+            </ul>
+        </div>
+    </section>
+    <section id="leader" class="section">
+        <div class="container leader">
+            <h2>Jamoa yetakchisi</h2>
+    
+            <div class="leader-profile">
+    
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ leader.photo.url }}" class="card-img-top" style="width:200px;">
+                    <div class="card-body">
+                        <p class="card-text">{{ leader.bio }}</p>
+                    </div>
+                </div>
+    
+                <div class="leader-info">
+                    <h3>{{ leader.name }}</h3>
+                    <p>{{ leader.role }}</p>
+                    <p>{{ leader.quote }}</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta">
+        <div class="container">
+            <h2>Biz bilan bog‘laning</h2>
+            <p>Loyihangizni boshlash uchun hoziroq murojaat qiling.</p>
+            <h3>Website: www.pixel.com <br>
+               
+                Telegram: @PlxelTech <br>
+               
+                Instagram: @Pixel_Tech</h3>
+        </div>
+    </section>
+</div>
+{% endblock content %}
